@@ -29,7 +29,7 @@ Configuring which MQTT topics are used is a little tricky, but not bad when you 
 
 Set the command topic pattern (`mqtt_topic_pattern`) to something like `milight/commands/:device_id/:device_type/:group_id`. You would then publish a message to the topic `milight/commands/1/rgb_cct/1` in order to control the `rgb_cct` bulbs paired with device ID `1` and group ID `1`.
 
-If you define an update topic pattern `milight/updates/:device_id/:device_type/:group_id`, both state changes sent by ESPMH, and captured packets sent from other devices will cause state updates to be published to the appropriate topic.
+If you define an update topic pattern (`mqtt_update_topic_pattern`) `milight/updates/:device_id/:device_type/:group_id`, both state changes sent by ESPMH, and captured packets sent from other devices will cause state updates to be published to the appropriate topic.
 
 It's easiest to verify things are working by fiddling around in a REPL (I'm using `irb` here):
 

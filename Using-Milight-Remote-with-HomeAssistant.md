@@ -2,11 +2,11 @@
 
 Milight makes 2.4GHz remotes to control their bulbs directly:
 
-![img](http://imgur.com/AQKkJSM.png)
+[[ http://imgur.com/AQKkJSM.png | height = 200px ]]
 
 These work nicely, but the problem is there's not a nice way to integrate them with a home automation platform like HomeAssistant (HASS). Fortunately, esp8266_milight_hub (ESPMH) makes it fairly easy to do just that.
 
-![](http://imgur.com/99hMJQK.gif)
+[[[ http://i.imgur.com/vK0FM3M.gif | height = 200px ]]](http://i.imgur.com/vK0FM3M.gifv)
 
 ## High-level setup
 

@@ -54,7 +54,7 @@ irb(main):023:0> while true; puts client.get.inspect; end
 
 Of course since we're using MQTT, you'll want to [add your broker to your HASS config](https://home-assistant.io/components/mqtt/).
 
-An easy way to get HASS to redirect MQTT traffic trigger by use of a remote to Milight bulbs is to forward messages received on the remote's update topic to the bulb's command topic. This can be done with an automation:
+An easy way to get HASS to redirect MQTT traffic triggered by use of a remote to Milight bulbs is to forward messages received on the remote's update topic to the bulb's command topic. This can be done with an automation:
 
 ```yaml
 automation:

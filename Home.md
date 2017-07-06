@@ -10,4 +10,4 @@ Most instructional content is in the README and [this blog post](http://blog.chr
 
 ## Howtos
 
-* [Using Milight remote with HomeAssistant](page)
+* [Using Milight remote with HomeAssistant](https://github.com/sidoh/esp8266_milight_hub/wiki/Using-Milight-Remote-with-HomeAssistant)

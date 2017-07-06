@@ -7,6 +7,7 @@ Milight makes 2.4GHz remotes to control their bulbs directly:
 These work quite well, but there's not a nice way to integrate them with a home automation platform like HomeAssistant (HASS). Fortunately, esp8266_milight_hub (ESPMH) makes it fairly easy to do just that:
 
 [[[ http://i.imgur.com/vK0FM3M.gif | height = 200px ]]](http://i.imgur.com/vK0FM3M.gifv)
+[[[ http://i.imgur.com/sCOOIMm.gif | height = 200px ]]](http://i.imgur.com/sCOOIMm.gifv)
 
 ## High-level setup
 
@@ -69,3 +70,7 @@ automation:
 Note the use of `+` in the updates topic. This is a [single-level wildcard](https://mosquitto.org/man/mqtt-7.html), and matches any number of non-`/` characters.
 
 The command topic template extracts the value of the group ID from the update topic and forwards it to the matching command topic.
+
+## Limitations
+
+Because RGB+CCT colors are defined in terms of two dimensions (hue, saturation) sent in separate packets, ESPMH is currently incapable of keeping track of colors as it is stateless.

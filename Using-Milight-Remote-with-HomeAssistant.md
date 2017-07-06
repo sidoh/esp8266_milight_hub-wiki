@@ -21,6 +21,10 @@ MQTT is used as the communication layer between HASS and the ESP. The following 
 
 ## Setup instructions
 
+#### Make sure passive listening is enabled
+
+Set the config setting `listen_repeats` to 3. If you have problems with reliability, you can increase this value.
+
 #### Configure MQTT on the ESP
 
 Specify `mqtt_server`, and `mqtt_username`/`mqtt_password` if your MQTT server is password protected. If your server runs on a non-default port, put in the server field (e.g., `mymqtt.com:1234`).

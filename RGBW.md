@@ -9,7 +9,7 @@ The packets are structured as follows:
 
 | Field           | Length  | Notes                                                                                     |
 |-----------------|---------|-------------------------------------------------------------------------------------------|
-| Request Type    | 1 byte  | One of 0xB0 or 0xB8. Seems to be ignored.                                                                     |
+| Request Type    | 1 byte  | Most significant nibble is always 0xB. Least significant nibble indicates mode, and ranges from [0,8].                                                                    |
 | Device ID       | 2 bytes |                                                                                           |
 | Color           | 1 byte  | Maps roughly to `((hue + 40)%360)*(255/359.0)`                                              |
 | Brightness      | 5 bits  | Values are [0,25] and aren't ordered intuitively. See extended notes for further details. |

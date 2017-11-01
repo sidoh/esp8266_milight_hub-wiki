@@ -4,6 +4,8 @@ The ESP8266 has a single CPU core.  This project tries to avoid waste where poss
 
 Other protocols (v6 UDP, REST) include receipt messages, which drastically decrease performance.  v5 UDP is the most lightweight option, but doesn't support all bulb types.
 
+Because UDP has no retransmit or backpressure functionality, MQTT (which is over TCP) is a better choice for both performance and reliability.
+
 ## Set state flushing rate limit high
 
 Set `state_flush_interval` as high as you can tolerate it.  This controls how often state is persisted to flash.

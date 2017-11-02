@@ -6,6 +6,7 @@
 * Howtos
   * [Milight Remote with HomeAssistant](https://github.com/sidoh/esp8266_milight_hub/wiki/Using-Milight-Remote-with-HomeAssistant)
   * [Performance Tuning](https://github.com/sidoh/esp8266_milight_hub/wiki/Performance-Tuning)
+  * [Troubleshooting](https://github.com/sidoh/esp8266_milight_hub/wiki/Troubleshooting)
 * RF Protocols
   * [RGBW](https://github.com/sidoh/esp8266_milight_hub/wiki/RGBW)
   * [CCT](https://github.com/sidoh/esp8266_milight_hub/wiki/CCT)

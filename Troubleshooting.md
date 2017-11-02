@@ -29,7 +29,7 @@ Sometimes ESP8266 dev boards have mislabeled pins.  Usually the pinouts you find
 
 Try sending commands when the module is right next to the device you're trying to control.  Radio modules have a fair amount of variation in range capabilities.  If the one you're using sucks, try another one.
 
-## Make sends work
+## Make sure sends work
 
 If you're sure hardware is working, but your devices aren't responding, the next step is to make sure that the ESP8266 is actually sending packets.  To do this:
 

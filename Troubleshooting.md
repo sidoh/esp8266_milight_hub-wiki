@@ -17,7 +17,9 @@ Bad wiring can cause crashes or hangs when sending commands.
 
 Knockoff NRF24L01s are [very common, and have relatively poor build quality](https://forum.mysensors.org/topic/1153/we-are-mostly-using-fake-nrf24l01-s-but-worse-fakes-are-emerging).
 
-If you can flash the firmware and load the webpage, but not send or receive packets, and you're sure the nRF is wired correctly, it's likely you have a faulty module.  It's possible that you'll be able to receive, but not send packets.
+If you can flash the firmware and load the webpage, but not send or receive packets, and you're sure the nRF is wired correctly, it's likely you have a faulty module.  
+
+_Note that it's possible that you'll be able to receive, but not send packets._
 
 Several users have reported that switching to a new radio module solves their problems.
 

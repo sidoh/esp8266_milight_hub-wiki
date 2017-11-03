@@ -4,7 +4,7 @@ This guide will walk you through common ways in which an ESP8266 running esp8266
 
 A dead ESP8266 is usually pretty obvious -- if you can't flash the firmware or it won't boot, you should try replacing the module.
 
-A dead or miswired radio module is harder to spot.  Some suggestions:
+A defective or miswired radio module is harder to spot.  Some suggestions:
 
 #### Wiring
 

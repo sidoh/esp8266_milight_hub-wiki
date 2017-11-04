@@ -22,8 +22,11 @@ This will prevent the radio from rapidly being reconfigured to support scanning 
 
 ## Make sure repeat throttling is enabled
 
-Repeat throttling automatically decreases the number of repeated packets down to a configurable minimum value when sending many commands in a short period of time.  This improves throughput at the cost of reliability.  The default values should work fine:
+Repeat throttling automatically decreases the number of repeated packets down to a configurable minimum value when sending many commands in a short period of time.  This improves throughput at the cost of reliability.
+
+Repeat throttling is off by default.  To enable it, set `packet_repeat_throttle_sensitivity` to something around 10.  Higher values cause throttling to have more effect sooner.
+
+You may also choose to edit these other throttling-related parameters:
 
 * `packet_repeat_throttle_threshold` should be set to no lower than the time it takes to send a command.
-* `packet_repeat_throttle_sensitivity` should be set to anything `>0`.
-* `packet_repeat_minimum` should be set to 1-3.  Use 1 if you don't mind devices missing some packets.
+* `packet_repeat_minimum` should be set to 1-3.  Use 1 if you don't mind devices missing packets.

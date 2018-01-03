@@ -5,6 +5,7 @@
   * [SmartThings](https://community.smartthings.com/t/release-new-milight-easybulb-limitlessled-integration/84925)
 * Howtos
   * [Milight Remote with HomeAssistant](https://github.com/sidoh/esp8266_milight_hub/wiki/Using-Milight-Remote-with-HomeAssistant)
+  * [Pairing New Bulbs](https://github.com/sidoh/esp8266_milight_hub/wiki/Pairing-new-bulbs)
   * [Performance Tuning](https://github.com/sidoh/esp8266_milight_hub/wiki/Performance-Tuning)
   * [Troubleshooting](https://github.com/sidoh/esp8266_milight_hub/wiki/Troubleshooting)
 * RF Protocols

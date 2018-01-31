@@ -18,7 +18,7 @@ You will need to set the following properties in the UI:
 * mqtt_server - can be an IP or hostname. Specify the port here (e.g., `mymqttserver.com:1234`) if it's not the default (1883).
 * mqtt_username / mqtt_password - if you have auth enabled on your MQTT server.
 * mqtt_topic_pattern - set this to `milight/:device_id/:device_type/:group_id`.
-* mqtt_update_topic_pattern - set this to `milight/updates/:device_id/:device_type/:group_id`.
+* mqtt_state_topic_pattern - set this to `milight/states/:device_id/:device_type/:group_id`.
 
 #### HASS
 
@@ -40,9 +40,9 @@ light:
     command_topic: milight/0x1/rgb_cct/1
 
     # This is the same structure as above, but for the setting
-    # mqtt_update_topic_pattern. esp8266_milight_hub sends state updates
+    # mqtt_state_topic_pattern. esp8266_milight_hub sends state updates
     # to this topic.
-    state_topic: milight/updates/0x1/rgb_cct/1
+    state_topic: milight/states/0x1/rgb_cct/1
 
     # Use a YAML anchor for common settings so we can just reference
     # them for other lights.
@@ -55,7 +55,7 @@ light:
   - name: "Milight Lamp #2"
     # Only difference here is we're using the group ID "2" instead of "1".
     command_topic: milight/0x1/rgb_cct/2
-    state_topic: milight/updates/0x1/rgb_cct/2
+    state_topic: milight/states/0x1/rgb_cct/2
 
     # Reference YAML anchor defined above.
     <<: *MILIGHT_PARAMS
@@ -63,6 +63,6 @@ light:
   - name: "Milight RGBW Bulbs"
     # Note here that we're using the "rgbw" bulb type instead of "rgb_cct".
     command_topic: milight/0x1/rgbw/1
-    state_topic: milight/updates/0x1/rgbw/1
+    state_topic: milight/states/0x1/rgbw/1
     <<: *MILIGHT_PARAMS
 ```

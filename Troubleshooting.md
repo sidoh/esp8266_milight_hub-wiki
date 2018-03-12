@@ -23,6 +23,8 @@ _Note that it's possible that you'll be able to receive, but not send packets._
 
 Several users have reported that switching to a new radio module solves their problems.
 
+It is also worth adding a 10µF capacitor between Vin and Gnd on the NRF24.
+
 #### Mislabeled pins
 
 Sometimes ESP8266 dev boards have mislabeled pins.  Usually the pinouts you find online will have the correct order.

@@ -10,6 +10,7 @@ Most instructional content is in the README and [this blog post](http://blog.chr
 
 * [Using Milight remote with HomeAssistant](https://github.com/sidoh/esp8266_milight_hub/wiki/Using-Milight-Remote-with-HomeAssistant)
 * [Performance Tuning](https://github.com/sidoh/esp8266_milight_hub/wiki/Performance-Tuning)
+* [Troubleshooting](https://github.com/sidoh/esp8266_milight_hub/wiki/Troubleshooting)
 
 ## MiLight Product Catalog
 

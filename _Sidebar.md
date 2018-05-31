@@ -11,4 +11,4 @@
 * RF Protocols
   * [RGBW](https://github.com/sidoh/esp8266_milight_hub/wiki/RGBW)
   * [CCT](https://github.com/sidoh/esp8266_milight_hub/wiki/CCT)
-  * [Radio Configs](https://github.com/sidoh/esp8266_milight_hub/wiki/Radio-Documentation)
+  * [Radio Configs](https://github.com/sidoh/esp8266_milight_hub/wiki/Radio-Configs)

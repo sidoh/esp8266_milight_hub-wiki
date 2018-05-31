@@ -1,5 +1,3 @@
-## Radio configs
-
 "radio configs" consist of the following pieces of information:
 
 1. Channel set: every remote we've encountered listens on three distinct 2.4 GHz channels

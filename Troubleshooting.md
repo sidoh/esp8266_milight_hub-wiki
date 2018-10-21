@@ -33,6 +33,10 @@ Sometimes ESP8266 dev boards have mislabeled pins.  Usually the pinouts you find
 
 Try sending commands when the module is right next to the device you're trying to control.  Radio modules have a fair amount of variation in range capabilities.  If the one you're using sucks, try another one.
 
+#### Interference
+
+Both the ESP8266 and the nRF24L01 operate in the 2.4 GHz spectrum.  As such, it's possible that they interfere with each other.  If you're experiencing range or reliability problems, try increasing the distance that the two modules are separated by.
+
 ## Make sure sends work
 
 If you're sure hardware is working, but your devices aren't responding, the next step is to make sure that the ESP8266 is actually sending packets.  To do this:

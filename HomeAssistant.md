@@ -1,6 +1,6 @@
 ## Integrating with HomeAssistant
 
-The easiest and probably best way to integrate with HomeAssistant is to use the builtin [`mqtt_json`](https://home-assistant.io/components/light.mqtt_json/) component. The advantages of this approach are:
+The easiest and probably best way to integrate with HomeAssistant is to use the builtin [`mqtt`](https://home-assistant.io/components/light.mqtt/) component. The advantages of this approach are:
 
 * Very minimal HASS config.
 * Super low latency because all communication is happening over pre-established TCP connections. You can expect lights to react to changes in HASS within 10-100ms.
@@ -47,7 +47,8 @@ light:
     # Use a YAML anchor for common settings so we can just reference
     # them for other lights.
     <<: &MILIGHT_PARAMS
-      platform: mqtt_json
+      platform: mqtt
+      schema: json
       color_temp: true
       rgb: true
       brightness: true

@@ -1,4 +1,4 @@
-## Integrating with HomeAssistant
+## Integrating with HomeAssistant (>= 0.84)
 
 The easiest and probably best way to integrate with HomeAssistant is to use the builtin [`mqtt`](https://home-assistant.io/components/light.mqtt/) component. The advantages of this approach are:
 
@@ -66,4 +66,18 @@ light:
     command_topic: milight/0x1/rgbw/1
     state_topic: milight/states/0x1/rgbw/1
     <<: *MILIGHT_PARAMS
+```
+
+## For older versions of HomeAssistant (< 0.84)
+
+Version 0.84 merged several MQTT light components into one (see [home-assistant#18227](https://github.com/home-assistant/home-assistant/pull/18227))
+
+Use these shared parameters instead:
+
+```yaml
+    <<: &MILIGHT_PARAMS
+      platform: mqtt_json
+      color_temp: true
+      rgb: true
+      brightness: true
 ```

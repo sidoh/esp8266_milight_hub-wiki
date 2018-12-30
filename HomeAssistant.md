@@ -68,6 +68,27 @@ light:
     <<: *MILIGHT_PARAMS
 ```
 
+#### Effects
+
+You can add support for effects using the `effects_list` parameter.  For example:
+
+```yaml
+bedroom_light:
+  platform: mqtt
+  schema: json
+  color_temp: true
+  rgb: true
+  brightness: true
+  effect: true
+  effect_list:
+    - white_mode
+    - night_mode
+    # Most milight bulbs have effects 0-8.
+    - 0
+    - 1
+    # ... and so on
+```
+
 ## For older versions of HomeAssistant (< 0.84)
 
 Version 0.84 merged several MQTT light components into one (see [home-assistant#18227](https://github.com/home-assistant/home-assistant/pull/18227))

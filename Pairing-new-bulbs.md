@@ -16,3 +16,7 @@ Choose a Device ID arbitrarily and pair your device with it following these inst
 1. Supply power to the bulb or lighting device.
 1. Within five seconds, click on the "Pair" button in the UI.
 1. The light should flash on and off a few times to indicate success.
+
+### Appendix: Directionality
+
+Except for some corner cases that can mostly be ignored (see [#91](https://github.com/sidoh/esp8266_milight_hub/issues/91)), bulbs never communicate back to the hub.  _Pairing_ can therefore be thought of as assigning a Device ID to a lighting device, rather than a two-way handshake. 

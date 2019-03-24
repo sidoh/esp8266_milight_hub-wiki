@@ -37,6 +37,8 @@ Try sending commands when the module is right next to the device you're trying t
 
 Both the ESP8266 and the nRF24L01 operate in the 2.4 GHz spectrum.  As such, it's possible that they interfere with each other.  If you're experiencing range or reliability problems, try increasing the distance that the two modules are separated by.
 
+A setup where the ESP8266 and the nRF24 are back-to-back can perform significantly worse than the same boards with a jumper cable separating the two chips.
+
 ## Make sure sends work
 
 If you're sure hardware is working, but your devices aren't responding, the next step is to make sure that the ESP8266 is actually sending packets.  To do this:

@@ -30,3 +30,9 @@ You may also choose to edit these other throttling-related parameters:
 
 * `packet_repeat_throttle_threshold` should be set to no lower than the time it takes to send a command.
 * `packet_repeat_minimum` should be set to 1-3.  Use 1 if you don't mind devices missing packets.
+
+## Disable some transmit channels
+
+In settings, under _Radio_, try disabling some of the transmit channels under the setting _nRF24 Send Channels_.  By default, all three channels are enabled.  If your bulbs respond with a single channel enabled, try that.  This will decrease the time it takes to send a single packet, which will improve throughput.
+
+Note that this setting is available as of 1.9.0.

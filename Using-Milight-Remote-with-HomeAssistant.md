@@ -74,7 +74,3 @@ automation:
 Note the use of `+` in the updates topic. This is a [single-level wildcard](https://mosquitto.org/man/mqtt-7.html), and matches any number of non-`/` characters.
 
 The command topic template extracts the value of the group ID from the update topic and forwards it to the matching command topic.
-
-## Limitations
-
-Because RGB+CCT colors are defined in terms of two dimensions (hue, saturation) sent in separate packets, ESPMH is currently incapable of keeping track of colors as it is stateless.

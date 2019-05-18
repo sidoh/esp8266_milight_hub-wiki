@@ -43,6 +43,10 @@ After this...
 
 ## Further Reading
 
+**Plugin Repo**:
+
+https://github.com/galinette2000/espmilighthub-domoticz
+
 Here you find some info when you use dzVents System inside domoticz.
 Some set options are working some not:
 http://www.domoticz.com/forum/viewtopic.php?f=65&t=27771&start=20#p213498

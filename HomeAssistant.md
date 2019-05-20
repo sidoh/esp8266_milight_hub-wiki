@@ -19,6 +19,7 @@ You will need to set the following properties in the UI:
 * mqtt_username / mqtt_password - if you have auth enabled on your MQTT server.
 * mqtt_topic_pattern - set this to `milight/:device_id/:device_type/:group_id`.
 * mqtt_state_topic_pattern - set this to `milight/states/:device_id/:device_type/:group_id`.
+* Optionally: set mqtt_client_status_topic to `milight/client_status`, and `simple_mqtt_client_status` to `true` (in the UI, set "Client Status Message Mode" to "Simple.")
 
 #### HASS
 
@@ -52,6 +53,12 @@ light:
       color_temp: true
       rgb: true
       brightness: true
+      
+      # If you enabled a client status topic, you can set these to show when
+      # the hub is disconnected in the HASS UI.
+      availability_topic: milight/client_status
+      payload_available: 'connected'
+      payload_not_available: 'disconnected'
 
   - name: "Milight Lamp #2"
     # Only difference here is we're using the group ID "2" instead of "1".

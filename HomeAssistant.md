@@ -20,6 +20,7 @@ You will need to set the following properties in the UI:
 * mqtt_topic_pattern - set this to `milight/:device_id/:device_type/:group_id`.
 * mqtt_state_topic_pattern - set this to `milight/states/:device_id/:device_type/:group_id`.
 * Optionally: set mqtt_client_status_topic to `milight/client_status`, and `simple_mqtt_client_status` to `true` (in the UI, set "Client Status Message Mode" to "Simple.")
+* Make sure you've got the appropriate `group_state_fields` selected.  The default values should work: state, brightness, computed_color, mode, color_temp, bulb_mode.
 
 #### HASS
 

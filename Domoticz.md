@@ -18,6 +18,7 @@ setup > hardware > scroll down in Type and select: ESP8266 Milight Hub
 * For MQTT settings, enter
   * mqtt_topic_pattern: `milight/:device_id/:device_type/:group_id`
   * mqtt_state_topic_pattern: `milight/states/:hex_device_id/:device_type/:group_id`
+  * mqtt_update_topic_pattern: `milight/updates/:hex_device_id/:device_type/:group_id`
 * Hit Add
 
 ## Configuring esp8266_milight_hub
@@ -25,7 +26,7 @@ setup > hardware > scroll down in Type and select: ESP8266 Milight Hub
 * Go to your Milight Hub then Settings > MQTT.  Enter these settings to match the ones above:
   * MQTT topic pattern: `milight/:device_id/:device_type/:group_id`
   * MQTT state topic pattern: `milight/states/:hex_device_id/:device_type/:group_id`
-  * _leave MQTT update topic pattern blank_
+  * MQTT update Pattern: `milight/updates/:hex_device_id/:device_type/:group_id`
 * Hit Submit
 
 ## Getting bulbs to show up in Domoticz
@@ -38,8 +39,6 @@ After this...
 
 * Go back to Milight Hub and switch on/off every bulb you have configured.
 * You will see that every bulb will add as device inside Domoticz
-
-**Note**: Remember the Group All is not working yet. They still develop this part
 
 ## Further Reading
 

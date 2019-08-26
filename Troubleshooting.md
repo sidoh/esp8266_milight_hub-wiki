@@ -17,13 +17,14 @@ Bad wiring can cause crashes or hangs when sending commands.
 
 Knockoff NRF24L01s are [very common, and have relatively poor build quality](https://forum.mysensors.org/topic/1153/we-are-mostly-using-fake-nrf24l01-s-but-worse-fakes-are-emerging).
 
-If you can flash the firmware and load the webpage, but not send or receive packets, and you're sure the nRF is wired correctly, it's likely you have a faulty module.  
+Here are some diagnostic suggestions:
 
-_Note that it's possible that you'll be able to receive, but not send packets._
-
-Several users have reported that switching to a new radio module solves their problems.
-
-It is also worth adding a 10µF capacitor between Vin and Gnd on the NRF24.
+* If you can flash the firmware and load the webpage, but not send or receive packets, and you're sure the nRF is wired correctly, it's likely you have a faulty module.  
+* _Note that it's possible that you'll be able to receive, but not send packets._
+* Several users have reported that switching to a new radio module solves their problems.
+* It is also worth adding a 10µF capacitor between Vin and Gnd on the NRF24.
+* The easiest way to rule out a bad radio module is to set up a second instance of espMH (meaning a 2nd ESP8266+nRF24 combo) to see if you can intercept packets from the original.
+* At least one user has reported being able to send and receive packets, seen from one instance of the espMH when sending from another, but still was unable to control bulbs.  Switching the nRF24 fixed the issue (see [#498](https://github.com/sidoh/esp8266_milight_hub/issues/498) for reference).
 
 #### Mislabeled pins
 
@@ -48,7 +49,7 @@ If you're sure hardware is working, but your devices aren't responding, the next
 
 ## If all else fails...
 
-Please [open an issue](https://github.com/sidoh/esp8266_milight_hub/issues/new) and include the following information:
+Please [open an issue](https://github.com/sidoh/esp8266_milight_hub/issues/new?assignees=&labels=setup-quesetion&template=problem-with-new-setup-or-device-compatibility.md&title=) and include the following information:
 
 * Mention that you've run through this troubleshooting guide.
 * Which ESP8266 board you're using (nodemcu, esp12f, etc.)

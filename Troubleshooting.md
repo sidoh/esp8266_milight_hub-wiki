@@ -10,6 +10,7 @@ A defective or miswired radio module is harder to spot.  Some suggestions:
 
 * Double-check wiring guide.  [This blog post](http://blog.christophermullins.com/2017/02/11/milight-wifi-gateway-emulator-on-an-esp8266/) details the hookup.
 * Use pin and headers or soldered joints instead of jumper cables wherever possible.  They're far more reliable.
+* Make sure that there are no stray wires causing shorts on ESP8266 and nRF pins. Test that all pins on the ESP8266 are working as expected.
 
 Bad wiring can cause crashes or hangs when sending commands.
 
